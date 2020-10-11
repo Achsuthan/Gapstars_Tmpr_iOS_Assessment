@@ -52,6 +52,8 @@ class ViewController: UIViewController {
         return view
     }()
     
+    
+    //pagination handler when the table view scroll
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         //Pagination handler using scroll
         if scrollView == tblJobs {
@@ -85,6 +87,8 @@ class ViewController: UIViewController {
     }
     var userLocation: CLLocationCoordinate2D!
     let jobsViewModel = JobsViewModel()
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         self.lblDate.text = self.jobsViewModel.getTodayDateString()
         self.jobsViewModel.getJobs { (status) in
@@ -139,7 +143,7 @@ class ViewController: UIViewController {
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         tblJobs.addSubview(refreshControl) // not required when using UITableViewController
     }
-    
+    //Pull down refresh hanlder
     @IBAction func refresh(_: Any){
         if !self.jobsViewModel.getIsAPICalled(){
             self.jobsViewModel.reset()
@@ -157,29 +161,30 @@ class ViewController: UIViewController {
         }
         
     }
-    
+    //Map button click
     @IBAction func btMap(_: Any){
         let map = MapFilterViewController(nibName: nil, bundle: nil)
         map.jobsViewModel = self.jobsViewModel
         self.navigationController?.pushViewController(map, animated: true)
     }
-    
+    //Filter button click
     @IBAction func btFilter(_: Any){
         let alertController = UIAlertController(title: "", message: "Function not available", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
-    
+    //Login button click
     @IBAction func btLogin(_: Any){
         self.present(LoginViewController(nibName: nil, bundle: nil), animated: true, completion: nil)
     }
-    
+    //Sign up button click
     @IBAction func btSignUp(_: Any){
         self.present(SignUpViewController(nibName: nil, bundle: nil), animated: true, completion: nil)
     }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate  {
+    //Get the user's current location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         self.userLocation = locValue
@@ -188,11 +193,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource, CLLocation
             self.tblJobs.reloadData()
         }
     }
-    
+    //Cell count
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.jobsViewModel.getJobsArrayCount()
     }
-    
+    //Each cell data
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let view = tableView.dequeueReusableCell(withIdentifier: "TableJobsCell", for: indexPath) as! TableJobsCell
         let single = self.jobsViewModel.getSingleJobjs(indexPath.row)

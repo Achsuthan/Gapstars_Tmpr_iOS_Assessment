@@ -12,6 +12,7 @@ import CoreLocation
 
 class MapFilterViewController: UIViewController {
     
+    //Location manager
     lazy var locationManager: CLLocationManager = {
         var manager = CLLocationManager()
         manager.distanceFilter = 10
@@ -124,21 +125,24 @@ class MapFilterViewController: UIViewController {
 
 extension MapFilterViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    //set the width and height for the collection view cell
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 220, height: 180)
     }
     
+    
+    //When user click the cell zoom to that location
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let single  = self.jobsViewModel.getSingleJobjs(indexPath.row)
         let location = CLLocation(latitude: Double(single.location.lat) ?? 0.0, longitude: Double(single.location.lng) ?? 0.0)
         let region = MKCoordinateRegion( center: location.coordinate, latitudinalMeters: CLLocationDistance(exactly: 5000)!, longitudinalMeters: CLLocationDistance(exactly: 5000)!)
         mapView.setRegion(mapView.regionThatFits(region), animated: true)
     }
-    
+    //Set the no of cell in the collection view
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.jobsViewModel.getJobsArrayCount()
     }
-    
+    //Set the data for each cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let view  = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionJobsCell", for: indexPath) as! CollectionJobsCell
         let single = self.jobsViewModel.getSingleJobjs(indexPath.row)
