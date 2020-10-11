@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         tabel.translatesAutoresizingMaskIntoConstraints = false
         tabel.backgroundColor = .clear
         tabel.separatorStyle = .none
+        tabel.showsVerticalScrollIndicator = false
         return tabel
     }()
     

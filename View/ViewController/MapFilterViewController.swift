@@ -41,6 +41,8 @@ class MapFilterViewController: UIViewController {
         layout.scrollDirection = .horizontal
         view.collectionViewLayout = layout
         view.backgroundColor = .clear
+        view.showsVerticalScrollIndicator = false
+        view.showsHorizontalScrollIndicator = false
         return view
     }()
     
