@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2003CC97AF8F3AF04AA5EEF8 /* Pods_Gapstars_Tmpr_iOS_Assessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE871748AF13B89C161CF097 /* Pods_Gapstars_Tmpr_iOS_Assessment.framework */; };
 		4F35089F2531FC1E006AC277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F35089E2531FC1E006AC277 /* AppDelegate.swift */; };
 		4F3508A12531FC1E006AC277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3508A02531FC1E006AC277 /* SceneDelegate.swift */; };
 		4F3508A32531FC1E006AC277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3508A22531FC1E006AC277 /* ViewController.swift */; };
@@ -16,6 +17,25 @@
 		4F3508AE2531FC22006AC277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3508AC2531FC22006AC277 /* LaunchScreen.storyboard */; };
 		4F3508B92531FC23006AC277 /* Gapstars_Tmpr_iOS_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3508B82531FC23006AC277 /* Gapstars_Tmpr_iOS_AssessmentTests.swift */; };
 		4F3508C42531FC23006AC277 /* Gapstars_Tmpr_iOS_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3508C32531FC23006AC277 /* Gapstars_Tmpr_iOS_AssessmentUITests.swift */; };
+		4F90B6562532143000A2BE64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90B6552532143000A2BE64 /* LoginViewController.swift */; };
+		4F90B6582532148600A2BE64 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90B6572532148600A2BE64 /* SignUpViewController.swift */; };
+		4F90B65A25321A3900A2BE64 /* TitleWithImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90B65925321A3900A2BE64 /* TitleWithImageButton.swift */; };
+		4F90B65D25321BE100A2BE64 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90B65C25321BE100A2BE64 /* FilterView.swift */; };
+		4F90B65F2532254A00A2BE64 /* MapFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90B65E2532254900A2BE64 /* MapFilterViewController.swift */; };
+		4F90B6622532286600A2BE64 /* CollectionJobsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90B6612532286600A2BE64 /* CollectionJobsCell.swift */; };
+		4F9E918E2531FD2300278BB7 /* HeaderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9E918B2531FD2300278BB7 /* HeaderHelper.swift */; };
+		4F9E918F2531FD2300278BB7 /* RequestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9E918C2531FD2300278BB7 /* RequestHelpers.swift */; };
+		4F9E91902531FD2300278BB7 /* RequestUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9E918D2531FD2300278BB7 /* RequestUrls.swift */; };
+		4F9E91982532017500278BB7 /* TableJobsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9E91972532017500278BB7 /* TableJobsCell.swift */; };
+		4FD23A7D2532C6B7007AA11B /* JobsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD23A7C2532C6B7007AA11B /* JobsModel.swift */; };
+		4FD23A7F2532C6CC007AA11B /* JobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD23A7E2532C6CC007AA11B /* JobsViewModel.swift */; };
+		4FD23A822532C85B007AA11B /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD23A812532C85B007AA11B /* Enum.swift */; };
+		4FD23A842532CCEF007AA11B /* ErrorMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD23A832532CCEF007AA11B /* ErrorMessageViewController.swift */; };
+		4FD23A862532E22A007AA11B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD23A852532E22A007AA11B /* Location.swift */; };
+		4FE2AD7825320C67000CFF47 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE2AD7725320C67000CFF47 /* AuthView.swift */; };
+		4FE2AD7B25320C98000CFF47 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE2AD7A25320C98000CFF47 /* ButtonView.swift */; };
+		72335A0FF3B45285535D58B9 /* Pods_Gapstars_Tmpr_iOS_AssessmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEAC7B3E9B0150F2236957E /* Pods_Gapstars_Tmpr_iOS_AssessmentTests.framework */; };
+		7ACF0B4CD4FAAA01C571D064 /* Pods_Gapstars_Tmpr_iOS_Assessment_Gapstars_Tmpr_iOS_AssessmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6205826D19CAE0079514D964 /* Pods_Gapstars_Tmpr_iOS_Assessment_Gapstars_Tmpr_iOS_AssessmentUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DF81F11DDA45D51B6C48F5D /* Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		127B3C07325199E5F335F6FB /* Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F35089B2531FC1E006AC277 /* Gapstars_Tmpr_iOS_Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gapstars_Tmpr_iOS_Assessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F35089E2531FC1E006AC277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F3508A02531FC1E006AC277 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +73,30 @@
 		4F3508BF2531FC23006AC277 /* Gapstars_Tmpr_iOS_AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gapstars_Tmpr_iOS_AssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3508C32531FC23006AC277 /* Gapstars_Tmpr_iOS_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gapstars_Tmpr_iOS_AssessmentUITests.swift; sourceTree = "<group>"; };
 		4F3508C52531FC23006AC277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F90B6552532143000A2BE64 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4F90B6572532148600A2BE64 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4F90B65925321A3900A2BE64 /* TitleWithImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithImageButton.swift; sourceTree = "<group>"; };
+		4F90B65C25321BE100A2BE64 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		4F90B65E2532254900A2BE64 /* MapFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFilterViewController.swift; sourceTree = "<group>"; };
+		4F90B6612532286600A2BE64 /* CollectionJobsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionJobsCell.swift; sourceTree = "<group>"; };
+		4F9E918B2531FD2300278BB7 /* HeaderHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderHelper.swift; sourceTree = "<group>"; };
+		4F9E918C2531FD2300278BB7 /* RequestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHelpers.swift; sourceTree = "<group>"; };
+		4F9E918D2531FD2300278BB7 /* RequestUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestUrls.swift; sourceTree = "<group>"; };
+		4F9E91972532017500278BB7 /* TableJobsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableJobsCell.swift; sourceTree = "<group>"; };
+		4FD23A7C2532C6B7007AA11B /* JobsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsModel.swift; sourceTree = "<group>"; };
+		4FD23A7E2532C6CC007AA11B /* JobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewModel.swift; sourceTree = "<group>"; };
+		4FD23A812532C85B007AA11B /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		4FD23A832532CCEF007AA11B /* ErrorMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageViewController.swift; sourceTree = "<group>"; };
+		4FD23A852532E22A007AA11B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4FE2AD7725320C67000CFF47 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		4FE2AD7A25320C98000CFF47 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		5DEAC7B3E9B0150F2236957E /* Pods_Gapstars_Tmpr_iOS_AssessmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapstars_Tmpr_iOS_AssessmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6205826D19CAE0079514D964 /* Pods_Gapstars_Tmpr_iOS_Assessment_Gapstars_Tmpr_iOS_AssessmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapstars_Tmpr_iOS_Assessment_Gapstars_Tmpr_iOS_AssessmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69BF742398616C4E032D9BB2 /* Pods-Gapstars_Tmpr_iOS_AssessmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapstars_Tmpr_iOS_AssessmentTests.release.xcconfig"; path = "Target Support Files/Pods-Gapstars_Tmpr_iOS_AssessmentTests/Pods-Gapstars_Tmpr_iOS_AssessmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		98B3E9C8078D5C8DB0D6A9F3 /* Pods-Gapstars_Tmpr_iOS_AssessmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapstars_Tmpr_iOS_AssessmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Gapstars_Tmpr_iOS_AssessmentTests/Pods-Gapstars_Tmpr_iOS_AssessmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5D0AE86B03CAD4CD650F424 /* Pods-Gapstars_Tmpr_iOS_Assessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapstars_Tmpr_iOS_Assessment.debug.xcconfig"; path = "Target Support Files/Pods-Gapstars_Tmpr_iOS_Assessment/Pods-Gapstars_Tmpr_iOS_Assessment.debug.xcconfig"; sourceTree = "<group>"; };
+		D3FB53E6E4D671EBBD6B519B /* Pods-Gapstars_Tmpr_iOS_Assessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gapstars_Tmpr_iOS_Assessment.release.xcconfig"; path = "Target Support Files/Pods-Gapstars_Tmpr_iOS_Assessment/Pods-Gapstars_Tmpr_iOS_Assessment.release.xcconfig"; sourceTree = "<group>"; };
+		DE871748AF13B89C161CF097 /* Pods_Gapstars_Tmpr_iOS_Assessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapstars_Tmpr_iOS_Assessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2003CC97AF8F3AF04AA5EEF8 /* Pods_Gapstars_Tmpr_iOS_Assessment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72335A0FF3B45285535D58B9 /* Pods_Gapstars_Tmpr_iOS_AssessmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,19 +120,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACF0B4CD4FAAA01C571D064 /* Pods_Gapstars_Tmpr_iOS_Assessment_Gapstars_Tmpr_iOS_AssessmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E57BDF6C1745E54600B2B79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE871748AF13B89C161CF097 /* Pods_Gapstars_Tmpr_iOS_Assessment.framework */,
+				6205826D19CAE0079514D964 /* Pods_Gapstars_Tmpr_iOS_Assessment_Gapstars_Tmpr_iOS_AssessmentUITests.framework */,
+				5DEAC7B3E9B0150F2236957E /* Pods_Gapstars_Tmpr_iOS_AssessmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4ABC3C3A88F885765164A8BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5D0AE86B03CAD4CD650F424 /* Pods-Gapstars_Tmpr_iOS_Assessment.debug.xcconfig */,
+				D3FB53E6E4D671EBBD6B519B /* Pods-Gapstars_Tmpr_iOS_Assessment.release.xcconfig */,
+				127B3C07325199E5F335F6FB /* Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests.debug.xcconfig */,
+				0DF81F11DDA45D51B6C48F5D /* Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests.release.xcconfig */,
+				98B3E9C8078D5C8DB0D6A9F3 /* Pods-Gapstars_Tmpr_iOS_AssessmentTests.debug.xcconfig */,
+				69BF742398616C4E032D9BB2 /* Pods-Gapstars_Tmpr_iOS_AssessmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4F3508922531FC1E006AC277 = {
 			isa = PBXGroup;
 			children = (
+				4FD23A802532C850007AA11B /* Enum */,
+				4F9E91932531FD3A00278BB7 /* ViewModel */,
+				4F9E91922531FD3500278BB7 /* Model */,
+				4F9E91912531FD2800278BB7 /* View */,
+				4F9E918A2531FD1000278BB7 /* Services */,
 				4F35089D2531FC1E006AC277 /* Gapstars_Tmpr_iOS_Assessment */,
 				4F3508B72531FC23006AC277 /* Gapstars_Tmpr_iOS_AssessmentTests */,
 				4F3508C22531FC23006AC277 /* Gapstars_Tmpr_iOS_AssessmentUITests */,
 				4F35089C2531FC1E006AC277 /* Products */,
+				4ABC3C3A88F885765164A8BF /* Pods */,
+				3E57BDF6C1745E54600B2B79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,7 +182,6 @@
 			children = (
 				4F35089E2531FC1E006AC277 /* AppDelegate.swift */,
 				4F3508A02531FC1E006AC277 /* SceneDelegate.swift */,
-				4F3508A22531FC1E006AC277 /* ViewController.swift */,
 				4F3508A42531FC1E006AC277 /* Main.storyboard */,
 				4F3508AA2531FC22006AC277 /* Assets.xcassets */,
 				4F3508AC2531FC22006AC277 /* LaunchScreen.storyboard */,
@@ -131,6 +209,115 @@
 			path = Gapstars_Tmpr_iOS_AssessmentUITests;
 			sourceTree = "<group>";
 		};
+		4F90B65B25321BD300A2BE64 /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				4F90B65C25321BE100A2BE64 /* FilterView.swift */,
+			);
+			path = FilterView;
+			sourceTree = "<group>";
+		};
+		4F90B6602532285100A2BE64 /* CollectionJobsCell */ = {
+			isa = PBXGroup;
+			children = (
+				4F90B6612532286600A2BE64 /* CollectionJobsCell.swift */,
+			);
+			path = CollectionJobsCell;
+			sourceTree = "<group>";
+		};
+		4F9E918A2531FD1000278BB7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F9E918B2531FD2300278BB7 /* HeaderHelper.swift */,
+				4F9E918C2531FD2300278BB7 /* RequestHelpers.swift */,
+				4F9E918D2531FD2300278BB7 /* RequestUrls.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4F9E91912531FD2800278BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F9E91952532015000278BB7 /* Components */,
+				4F9E91942532013A00278BB7 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F9E91922531FD3500278BB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FD23A7C2532C6B7007AA11B /* JobsModel.swift */,
+				4FD23A852532E22A007AA11B /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F9E91932531FD3A00278BB7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FD23A7E2532C6CC007AA11B /* JobsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4F9E91942532013A00278BB7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4F3508A22531FC1E006AC277 /* ViewController.swift */,
+				4F90B6552532143000A2BE64 /* LoginViewController.swift */,
+				4F90B6572532148600A2BE64 /* SignUpViewController.swift */,
+				4F90B65E2532254900A2BE64 /* MapFilterViewController.swift */,
+				4FD23A832532CCEF007AA11B /* ErrorMessageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4F9E91952532015000278BB7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4F90B6602532285100A2BE64 /* CollectionJobsCell */,
+				4F90B65B25321BD300A2BE64 /* FilterView */,
+				4FE2AD7925320C88000CFF47 /* Button */,
+				4FE2AD7625320C54000CFF47 /* AuthView */,
+				4F9E91962532015F00278BB7 /* TableJobsCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4F9E91962532015F00278BB7 /* TableJobsCell */ = {
+			isa = PBXGroup;
+			children = (
+				4F9E91972532017500278BB7 /* TableJobsCell.swift */,
+			);
+			path = TableJobsCell;
+			sourceTree = "<group>";
+		};
+		4FD23A802532C850007AA11B /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				4FD23A812532C85B007AA11B /* Enum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		4FE2AD7625320C54000CFF47 /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				4FE2AD7725320C67000CFF47 /* AuthView.swift */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
+		4FE2AD7925320C88000CFF47 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				4FE2AD7A25320C98000CFF47 /* ButtonView.swift */,
+				4F90B65925321A3900A2BE64 /* TitleWithImageButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +325,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F3508C82531FC23006AC277 /* Build configuration list for PBXNativeTarget "Gapstars_Tmpr_iOS_Assessment" */;
 			buildPhases = (
+				CF5EB0FEFD22085A586054DA /* [CP] Check Pods Manifest.lock */,
 				4F3508972531FC1E006AC277 /* Sources */,
 				4F3508982531FC1E006AC277 /* Frameworks */,
 				4F3508992531FC1E006AC277 /* Resources */,
+				A07EB1F4AFE311FDC8140928 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +344,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F3508CB2531FC23006AC277 /* Build configuration list for PBXNativeTarget "Gapstars_Tmpr_iOS_AssessmentTests" */;
 			buildPhases = (
+				94CC8A1636AFF4F128CFF507 /* [CP] Check Pods Manifest.lock */,
 				4F3508B02531FC23006AC277 /* Sources */,
 				4F3508B12531FC23006AC277 /* Frameworks */,
 				4F3508B22531FC23006AC277 /* Resources */,
@@ -173,9 +363,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F3508CE2531FC23006AC277 /* Build configuration list for PBXNativeTarget "Gapstars_Tmpr_iOS_AssessmentUITests" */;
 			buildPhases = (
+				A4D8EBC1095954B11EAEB4D0 /* [CP] Check Pods Manifest.lock */,
 				4F3508BB2531FC23006AC277 /* Sources */,
 				4F3508BC2531FC23006AC277 /* Frameworks */,
 				4F3508BD2531FC23006AC277 /* Resources */,
+				20772B12D7216A547278A6B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,15 +449,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20772B12D7216A547278A6B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94CC8A1636AFF4F128CFF507 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gapstars_Tmpr_iOS_AssessmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A07EB1F4AFE311FDC8140928 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gapstars_Tmpr_iOS_Assessment/Pods-Gapstars_Tmpr_iOS_Assessment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gapstars_Tmpr_iOS_Assessment/Pods-Gapstars_Tmpr_iOS_Assessment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gapstars_Tmpr_iOS_Assessment/Pods-Gapstars_Tmpr_iOS_Assessment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4D8EBC1095954B11EAEB4D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF5EB0FEFD22085A586054DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gapstars_Tmpr_iOS_Assessment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F3508972531FC1E006AC277 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD23A7F2532C6CC007AA11B /* JobsViewModel.swift in Sources */,
+				4F90B65D25321BE100A2BE64 /* FilterView.swift in Sources */,
 				4F3508A32531FC1E006AC277 /* ViewController.swift in Sources */,
 				4F35089F2531FC1E006AC277 /* AppDelegate.swift in Sources */,
+				4FE2AD7B25320C98000CFF47 /* ButtonView.swift in Sources */,
+				4F90B65F2532254A00A2BE64 /* MapFilterViewController.swift in Sources */,
+				4F9E918E2531FD2300278BB7 /* HeaderHelper.swift in Sources */,
+				4F90B65A25321A3900A2BE64 /* TitleWithImageButton.swift in Sources */,
+				4F9E91902531FD2300278BB7 /* RequestUrls.swift in Sources */,
+				4F9E91982532017500278BB7 /* TableJobsCell.swift in Sources */,
+				4F90B6582532148600A2BE64 /* SignUpViewController.swift in Sources */,
+				4F9E918F2531FD2300278BB7 /* RequestHelpers.swift in Sources */,
+				4FD23A7D2532C6B7007AA11B /* JobsModel.swift in Sources */,
+				4FD23A862532E22A007AA11B /* Location.swift in Sources */,
 				4F3508A12531FC1E006AC277 /* SceneDelegate.swift in Sources */,
+				4FD23A842532CCEF007AA11B /* ErrorMessageViewController.swift in Sources */,
 				4F3508A92531FC1E006AC277 /* Gapstars_Tmpr_iOS_Assessment.xcdatamodeld in Sources */,
+				4F90B6622532286600A2BE64 /* CollectionJobsCell.swift in Sources */,
+				4FE2AD7825320C67000CFF47 /* AuthView.swift in Sources */,
+				4FD23A822532C85B007AA11B /* Enum.swift in Sources */,
+				4F90B6562532143000A2BE64 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,11 +748,13 @@
 		};
 		4F3508C92531FC23006AC277 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D0AE86B03CAD4CD650F424 /* Pods-Gapstars_Tmpr_iOS_Assessment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8H9WUUCH6;
 				INFOPLIST_FILE = Gapstars_Tmpr_iOS_Assessment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,17 +762,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.achsuthan.Gapstars-Tmpr-iOS-Assessment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4F3508CA2531FC23006AC277 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FB53E6E4D671EBBD6B519B /* Pods-Gapstars_Tmpr_iOS_Assessment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8H9WUUCH6;
 				INFOPLIST_FILE = Gapstars_Tmpr_iOS_Assessment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,12 +782,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.achsuthan.Gapstars-Tmpr-iOS-Assessment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		4F3508CC2531FC23006AC277 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B3E9C8078D5C8DB0D6A9F3 /* Pods-Gapstars_Tmpr_iOS_AssessmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +811,7 @@
 		};
 		4F3508CD2531FC23006AC277 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69BF742398616C4E032D9BB2 /* Pods-Gapstars_Tmpr_iOS_AssessmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +834,7 @@
 		};
 		4F3508CF2531FC23006AC277 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127B3C07325199E5F335F6FB /* Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +855,7 @@
 		};
 		4F3508D02531FC23006AC277 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF81F11DDA45D51B6C48F5D /* Pods-Gapstars_Tmpr_iOS_Assessment-Gapstars_Tmpr_iOS_AssessmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

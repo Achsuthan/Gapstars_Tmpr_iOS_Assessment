@@ -1,0 +1,6 @@
+framework module Pods_Gapstars_Tmpr_iOS_AssessmentTests {
+  umbrella header "Pods-Gapstars_Tmpr_iOS_AssessmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
