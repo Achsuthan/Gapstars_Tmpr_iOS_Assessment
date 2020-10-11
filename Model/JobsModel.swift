@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct JobsModel: Codable {
+struct JobsModel: Codable, Equatable {
     var photo: String?
     var shifts: [Shifts]
     var title: String
@@ -16,7 +16,7 @@ struct JobsModel: Codable {
     var location: Location
 }
 
-struct Shifts: Codable {
+struct Shifts: Codable, Equatable {
     var currency: String
     var earnings_per_hour: Double
     var duration: Double
@@ -24,11 +24,11 @@ struct Shifts: Codable {
     var end_time: String
 }
 
-struct JobCategory: Codable {
+struct JobCategory: Codable, Equatable {
     var description: String
 }
 
-struct Location: Codable {
+struct Location: Codable, Equatable {
     var lng: String
     var lat: String
 }

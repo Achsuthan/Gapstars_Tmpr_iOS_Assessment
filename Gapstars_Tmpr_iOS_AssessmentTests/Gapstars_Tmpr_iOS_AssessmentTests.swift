@@ -34,6 +34,26 @@ class Gapstars_Tmpr_iOS_AssessmentTests: XCTestCase {
         self.checkReset(tmp)
         
         self.checkTodayDateString(tmp)
+        
+        self.addJobsArray(tmp)
+        
+        self.checkSingleJobs(tmp)
+        
+        self.checkLocationArray(tmp)
+    }
+    //check single jobs
+    func checkSingleJobs(_ tmp: JobsViewModel){
+        XCTAssertEqual(tmp.getSingleJobjs(0), JobsModel(photo: "test", shifts: [Shifts(currency: "$", earnings_per_hour: 1, duration: 1, start_time: "10:00", end_time: "11:00")], title: "testing", job_category: JobCategory(description: "testing"), location: Location(lng: "1.0", lat: "1.0")), "check Single Jobs")
+    }
+    
+    func checkLocationArray(_ tmp: JobsViewModel){
+        XCTAssertEqual(tmp.getAllLocation(),[LocationMap(title: "testing", latitude: 1.0, longitude: 1.0)], " check Location Array")
+    }
+    
+    //Add values to jobs
+    func addJobsArray(_ tmp: JobsViewModel){
+        tmp.addJobsArray([JobsModel(photo: "test", shifts: [Shifts(currency: "$", earnings_per_hour: 1, duration: 1, start_time: "10:00", end_time: "11:00")], title: "testing", job_category: JobCategory(description: "testing"), location: Location(lng: "1.0", lat: "1.0"))])
+        
     }
     
     //Check the current date

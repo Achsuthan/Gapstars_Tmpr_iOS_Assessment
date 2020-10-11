@@ -140,6 +140,13 @@ class JobsViewModel {
         }
         return jobsArray
     }
+    
+    #if DEBUG
+    //use this function only for testing purpose
+    public func addJobsArray(_ data: [JobsModel]){
+        self.jobsArray = data
+    }
+    #endif
 }
 
 extension Int {

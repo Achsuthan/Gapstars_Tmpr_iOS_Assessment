@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct LocationMap {
+struct LocationMap: Equatable {
     let title: String
     let latitude: Double
     let longitude: Double
