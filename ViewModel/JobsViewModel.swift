@@ -42,6 +42,11 @@ class JobsViewModel {
         }
     }
     
+    //Get the last date
+    public func getLastDate()-> Date {
+        return self.lastDate
+    }
+    
     
     //Get the today string
     public func getTodayDateString()-> String {

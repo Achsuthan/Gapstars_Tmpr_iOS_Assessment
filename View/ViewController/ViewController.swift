@@ -87,10 +87,11 @@ class ViewController: UIViewController {
         self.setUp()
     }
     var userLocation: CLLocationCoordinate2D!
-    let jobsViewModel = JobsViewModel()
+    var jobsViewModel = JobsViewModel()
     
     
     override func viewDidAppear(_ animated: Bool) {
+        self.jobsViewModel = JobsViewModel()
         self.lblDate.text = self.jobsViewModel.getTodayDateString()
         self.jobsViewModel.getJobs { (status) in
             if(status){
